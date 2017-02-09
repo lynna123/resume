@@ -15,7 +15,7 @@ html,body,.main{
 
 
 .swiper-slide{position: relative;  background:url("../img/bg3.jpg") no-repeat; background-size: 100% 100%; overflow: hidden; width:100%;}
-.swiper-slide dl{width:5.34rem; height:8.61rem; background-size:cover; margin:0.48rem auto 0; padding-top:0.6rem; opacity: 0; background: url("../img/bg3.png") no-repeat; }
+.swiper-slide dl{width:5.34rem; height:8.61rem;  margin:0.48rem auto 0; padding-top:0.6rem; opacity: 0; background: url("../img/bg3.png") no-repeat;background-size:100%; }
 #page2.swiper-slide dl,#page3.swiper-slide dl,#page4.swiper-slide dl,#page5.swiper-slide dl{opacity: 1;}
 .swiper-slide img{width:100%; height:100%;}
 .slide1{
