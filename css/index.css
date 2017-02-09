@@ -44,8 +44,8 @@ hgroup{padding:0.26rem 0.5rem; border-top:1px solid #ccc; border-bottom:1px soli
 .slide2 dd ul{width:4.40rem; margin:0 auto;}
 .slide2 dd ul li{padding:0 0.1rem; font-size:0.26rem; line-height:0.90rem; border-bottom:1px solid #ccc;}
 .slide2 dd ul li span{display:inline-block; margin-right:0.2rem;}
-.ab_book{position: absolute; bottom:-3rem; left:50%; margin-left:-2.25rem;width:4.5rem; height:4.5rem;}
-.people{width:3.45rem; height:auto; margin:0.4rem auto;}
+.ab_book{position: absolute; bottom:-3.2rem; left:50%; margin-left:-2.25rem;width:4.5rem; height:4.5rem;}
+.people{width:3.45rem; height:auto; margin:0.2rem auto;}
 
 
 .slide3,.slide4,.slide5{text-align: center;}
