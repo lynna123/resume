@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        //移动适配
+        // 640/320=100/x
+        var desW=640; //设计稿宽度
+        var winW=document.documentElement.clientWidth;  //设备的宽度
+        document.documentElement.style.fontSize=winW/desW*100+'px'; //各个设备根元素字体大小
+
+    </script>
+</head>
+<body>
+<section class="music">
+    <!--controls显示用户操作界面
+        autoplay:自动播放
+        loop循环播放
+        preload:auto; 预加载音频文件
+        metadata 之家在音频文件的原数据 ，例如（音频文件总共的播放时间 none 不提前加载音频文件）
+    -->
+    <audio src="audio/music.mp3"  autoplay  preload="none" id="audio"></audio>
+</section>
+<section class="main">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <hgroup>
+                    <h1>[&nbsp;个人简历&nbsp;]</h1>
+                    <span>CURRICULUM VITAE</span>
+                </hgroup>
+                <div class="box_circle">
+                    <p><img src="img/computer.png" alt="" /></p>
+                    <div class="small_circle"><img src="img/index_circle1.png" alt=""></div>
+                    <div class="big_circle"><img src="img/index_circle2.png" alt=""></div>
+                </div>
+
+            </div>
+            <div class="swiper-slide slide2" >
+                <dl>
+                    <dt><span><img src="img/me.jpg" alt=""></span><em class="me_circle"></em></dt>
+                    <dd>
+                        <ul>
+                            <li><span>姓名：丁晓娜</span><span>性别：女</span></li>
+                            <li><span>籍贯：山西省</span><span>专业：英语教育</span></li>
+                            <li>邮箱：617733147@qq.com</li>
+                            <li>特长：英语</li>
+                            <li>毕业院校：太原大学教育学院</li>
+                        </ul>
+                    </dd>
+                    <dd class="ab_book"><div ><img src="img/book.png" alt=""></div></dd>
+                </dl>
+            </div>
+            <div class="swiper-slide slide3" >
+                <dl>
+                    <dt><h2>[&nbsp;个人简历&nbsp;]</h2></dt>
+                    <dd>
+                        <ul>
+                            <li class="yellow"><strong>Ps</strong><span>||||||||||||||||||||||||||||||</span></li>
+                            <li class="purple"><strong>Ai</strong><span>||||||||||||||||||||||||||||||</span></li>
+                            <li class="green"><strong>Ws</strong><span>||||||||||||||||||||||||||||||</span></li>
+                            <li class="gray"><strong>Dw</strong><span>||||||||||||||||||||||||||||||</span></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <div class="ab_pen"><img src="img/pen.png" alt=""></div>
+                <div class="ab_bottom"><img src="img/bottom2.png" alt=""></div>
+            </div>
+            <div class="swiper-slide slide4" >
+                <dl class="pro_exper">
+                    <dt><h2>[&nbsp;工作经验&nbsp;]</h2></dt>
+                    <dd>
+                        <ul>
+                            <li><span><img src="img/logo1.png" /> <em></em></span><p><em>2015年~2016年</em><br/>主要负责新浪网中医频道的中医中药第一门户网站以及app</p></li>
+                            <li><span><img src="img/logo3.png" /><em></em></span><p><em>2013年~2015年</em><br/>负责智信华飞科技有限公司的官网</p></li>
+                            <li><span><img src="img/logo2.png" /> <em></em></span><p><em>2013年~2015年</em><br/>负责金融街的app开发以及后台页面开发</p></li>
+                            <li><span><img src="img/logo4.png" /> <em></em></span><p><em>2013年~2015年</em><br/>负责金融街app开发</p></li>
+                            <li><span><img src="img/logo5.png" /> <em></em></span><p><em>2013年~2015年</em><br/>负责金融街的app开发以及后台页面开发</p></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <div class="ab_pen"><img src="img/pen.png" alt=""></div>
+               <!-- <div class="ab_bottom"><img src="img/bottom2.png" alt=""></div>-->
+            </div>
+            <div class="swiper-slide slide2 slide5" >
+                <dl>
+                    <dt><h2>[&nbsp;静待佳音&nbsp;]</h2></dt>
+                    <dd class="weixin"><img src="img/weixin.jpg" alt=""></dd>
+                    <dd class="message">
+                        <p>QQ：617733147 </p>
+                        <p>微信：617733147 </p>
+                        <p>邮箱：617733147@qq.com </p>
+                        <p>手机：15201202321 </p>
+                    </dd>
+                    <dd class="people"><div><img src="img/per.png" alt=""></div></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical',//vertical纵向  horizontal横向
+        loop:true, //循环模式
+        onTransitionEnd: function (swiper) {   //滑块滑动结束时  会丢失滑块
+            var curIndex=swiper.activeIndex;//当前活动滑块的索引（也就是上一个滑块滑动结束后，到下一个滑块的索引）
+            var slides=swiper.slides; //获取所有的滑块
+            //通过当前活动滑块的索引找到对应的滑块，并给她增加相应的id名
+            [].forEach.call(slides, function (item,index) {
+                item.id='';
+                if(index==curIndex){
+                    //当前活动滑块的索引是否是第一个或者最后一个
+                    /*if(index==0){
+                     slides[curIndex].id='page'+(slides.length-2);
+                     }else if(index==slides.length-1){
+                     slides[curIndex].id='page1';
+                     }else{
+                     slides[curIndex].id='page'+index;
+                     }*/
+                    switch(index){
+                        case 0:
+                            item.id='page'+(slides.length-2);
+                            break;
+                        case slides.length-1:
+                            item.id='page1';
+                            break;
+                        default:
+                            item.id='page'+index;
+                    }
+                }
+            });
+        },
+        onInit: function (swiper) {   //初始化
+            var slides=swiper.slides; //获取所有的滑块
+            slides[0].id='page1'
+        }
+    })
+
+    var music=document.querySelector('.music')
+    var audio=document.querySelector('#audio')
+    window.setTimeout(function () {
+        audio.play();
+        music.style.opacity=1;
+        music.className='music musicMove';
+    },1000)
+    /*音频文件 play() 停止pause
+     * 怎样判断音频文件是播放还是停止的 audio.paused true 停止 false -->播放
+     *
+     * */
+    music.addEventListener('click', function () {
+        if(audio.paused){
+            audio.play();
+            music.className='music musicMove';
+        }else{
+            audio.pause();
+            music.className='music';
+        }
+    },false)
+
+</script>
+</body>
+</html>

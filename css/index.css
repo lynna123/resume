@@ -1,0 +1,456 @@
+*{margin:0; padding:0;}
+html,body,.main{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    color:#fff;
+    max-width:640px;
+    margin:0 auto;
+    position: relative;
+}
+.swiper-container{
+    width:100%;
+    height: 100%;
+}
+
+
+.swiper-slide{position: relative;  background:url("../img/bg3.jpg") no-repeat; background-size: 100% 100%; overflow: hidden; width:100%;}
+.swiper-slide dl{width:5.34rem; height:8.61rem; background-size:cover; margin:0.48rem auto 0; padding-top:0.6rem; opacity: 0; }
+#page2.swiper-slide dl,#page3.swiper-slide dl,#page4.swiper-slide dl,#page5.swiper-slide dl{opacity: 1;}
+.swiper-slide img{width:100%; height:100%;}
+.slide1{
+    background:url("../img/bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+/*.swiper-slide{opacity: 0;}
+#page1.swiper-slide,#page2.swiper-slide,#page3.swiper-slide,#page4.swiper-slide,#page5.swiper-slide{opacity: 1;}*/
+
+hgroup{padding:0.26rem 0.5rem; border-top:1px solid #ccc; border-bottom:1px solid #ccc; width:3.54rem; margin:1.04rem auto 0; text-align:center; opacity: 0;}
+.slide1 h1{color: inherit;  line-height: inherit;  font-size: 0.48rem; letter-spacing:0.1rem; }
+.slide1 span{font-size: 0.26rem;  line-height: 0.26rem;margin-top:10px; display: block}
+.slide1 .box_circle{ width:5.88rem; height:5.92rem; /*border: 1px solid rgba(178,178,178,.5); border-radius: 50%;*/ text-align: center; line-height:5.92rem; position: relative; margin:1.04rem auto 0; opacity: 0;}
+.slide1 .box_circle p{/*border: 0.24rem solid rgba(178,178,178,.5);  border-radius: 50%;*/ width:5rem; height:5rem; position: absolute; top:0.4rem; left:0.4rem; z-index: 11}
+.slide1 .box_circle p img{position: absolute; top:1rem; left:-0.02rem; width:5.45rem; height:4rem}
+.small_circle{width:5.4rem; height:5.4rem; position: absolute; top:0.25rem; left:0.25rem; z-index: 0; opacity: 0.5}
+.small_circle img{width:100%; height:100%; }
+.big_circle{ width:5.9rem; height:5.9rem;  position: absolute; top:0; left:0; z-index: 0; opacity: 0.3}
+.big_circle img{width:100%; height:100%;  }
+
+.slide2 dt{padding:0.1rem; width:1.64rem; height:1.64rem; margin:0 auto; position: relative}
+.slide2 dl{position: relative;}
+.slide2 dt span{width:1.64rem; height:1.64rem; border-radius:50%; display:block; overflow: hidden;}
+.slide2 dt span img{width:100%; height:100%;}
+.slide2 dt .me_circle{position: absolute; top:0; left:0; width:100%; height:100%; background: url("../img/b_circle_dashed.png") no-repeat; background-size: 100%;}
+.slide2 dd ul{width:4.40rem; margin:0 auto;}
+.slide2 dd ul li{padding:0 0.1rem; font-size:0.26rem; line-height:0.90rem; border-bottom:1px solid #ccc;}
+.slide2 dd ul li span{display:inline-block; margin-right:0.2rem;}
+.ab_book{position: absolute; bottom:-1rem; left:50%; margin-left:-2.81rem;width:5.62rem;}
+.people{width:3.45rem; height:auto; margin:0.4rem auto;}
+
+
+.slide3,.slide4,.slide5{text-align: center;}
+.slide3 h2,.slide4 h2,.slide5 h2{color: inherit;  line-height: inherit;  font-size: 0.48rem; letter-spacing:0.1rem; }
+.slide3 dl{margin-top:0.78rem;}
+.slide3 dl ul{padding:0.96rem 0.76rem 0; text-align: left;}
+.slide3 dl ul li{margin-bottom:0.3rem;}
+.slide3 dl ul li strong{width:0.76rem; height:0.76rem; line-height:0.76rem; border-radius:50%; border:1px solid #ccc; display: inline-block; margin-right:0.3rem; text-align: center; font-size: 0.38rem; font-weight: normal;}
+.slide3 dl ul li span{width:0; overflow:hidden; display: inline-block}
+.ab_pen{position: absolute; top:0.44rem; right:-1.52rem; margin-left:-2.81rem; width:3.04rem; height:3.04rem; opacity: 0;}
+.ab_bottom{position: absolute; top: 5.8rem; left: -3rem; width:8.24rem; height:8.39rem; opacity: 0;}
+.yellow{color:rgb(255, 247, 61);}
+.purple{color:rgb(255, 65, 186);}
+.green{color:rgb(90, 248, 255);}
+.gray{color:rgb(255, 255, 255);}
+
+
+.slide4 dl.pro_exper ul{padding:0.2rem 0.3rem; font-size:0.24rem; margin-top:0.5rem;}
+.slide4 dl.pro_exper ul li{height:1.44rem; margin-bottom: 0.2rem; }
+.slide4 dl.pro_exper ul li span{width:1rem; height:1rem; line-height:1rem; border-radius: 50%; display: inline-block; float:left; background:#fff; box-shadow: 0 0 0 0 rgba(255,255,255,0.5); margin:0.2rem;}
+.slide4 dl.pro_exper ul li span em{position: absolute; top:-0.1rem; left:-0.1rem; width:1.2rem; height:1.2rem; background: url("../img/b_circle_dashed2.png") no-repeat; background-size: 100%;}
+.slide4 dl.pro_exper ul li span img{width:90%; height:auto; margin-top:0.2rem;}
+.slide4 dl.pro_exper ul li p{float:left; margin-top:0.15rem;line-height:20px; width:3.3rem;}
+.slide4 dl.pro_exper ul li p em{font-style: normal; font-weight:bold;   font-size:0.24rem;}
+
+.slide4 dl.pro_exper ul li:last-child{
+    border:none;
+}
+
+.slide5 dt{padding:0; border:0; width:100%; height:auto;}
+.slide5 dd.weixin{width:2.3rem; height:2.3rem; margin:0.52rem auto 0;}
+.slide5 dd.message{margin-top:0.66rem; line-height:0.50rem; font-size:0.26rem;}
+
+
+/*动画*/
+#page1 hgroup{
+    opacity: 1;
+    -webkit-animation: lightSpeedIn 1s 1 both;
+    animation: lightSpeedIn 1s 1 both;
+}
+#page1 hgroup h1{
+    -webkit-animation: fadeInUp 1s 1 0.6s both;
+    animation: fadeInUp 1s 1 0.6s both;
+}
+#page1 hgroup span{
+    -webkit-animation: fadeInDown 1s 1 0.6s both;
+    animation: fadeInDown 1s 1 0.6s both;
+}
+#page1 hgroup span{
+    -webkit-animation: fadeInDown 1s 1 0.6s both;
+    animation: fadeInDown 1s 1 0.6s both;
+}
+#page1 .small_circle{
+    -webkit-animation: zoomIn 1s infinite 1s both;
+    animation: zoomIn 1s infinite 1s  both;
+}
+#page1 .big_circle{
+    -webkit-animation: zoomIn 1s infinite 1.2s  both;
+    animation: zoomIn 1s infinite 1.2s both;
+}
+#page1 .box_circle{opacity: 1;}
+#page1 .box_circle img{
+    -webkit-animation: rotateIn 1s 1 1.6s  both;
+    animation: rotateIn 1s 1 1.6s both;
+}
+
+#page3 h2,#page4 h2,#page5 h2{
+    -webkit-animation: lightSpeedIn 1s 1 both;
+    animation: lightSpeedIn 1s 1 both;
+}
+
+
+#page2 dt{
+    -webkit-animation: bounceInDown 1s 1 0.3s  both;
+    animation: bounceInDown 1s 1 0.3s both;
+}
+#page2 dt .me_circle{
+    -webkit-animation: move 1s infinite linear  both;
+    animation: move 1s infinite linear  both;
+}
+@-webkit-keyframes move{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes move{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#page2 ul li:nth-child(1){
+    -webkit-animation: bounceInLeft 1s 1 0.3s both;
+    animation: bounceInLeft 1s 1 0.3s both;
+}
+#page2 ul li:nth-child(2){
+    -webkit-animation: bounceInLeft 1s 1 0.6s both;
+    animation: bounceInLeft 1s 1 0.6s both;
+}
+#page2 ul li:nth-child(3){
+    -webkit-animation: bounceInLeft 1s 1 0.9s both;
+    animation: bounceInLeft 1s 1 0.9s both;
+}
+#page2 ul li:nth-child(4){
+    -webkit-animation: bounceInLeft 1s 1 1.2s both;
+    animation: bounceInLeft 1s 1 1.2s both;
+}
+#page2 ul li:nth-child(5){
+    -webkit-animation: bounceInLeft 1s 1 1.5s both;
+    animation: bounceInLeft 1s 1 1.5s both;
+}
+#page2 .ab_book{
+    -webkit-animation: fadeInLeft 1s 1 1s both;
+    animation: fadeInLeft 1s 1 1s both;
+}
+
+#page3 ul li:nth-child(1){
+    -webkit-animation: bounceInLeft 1s 1 0.3s both;
+    animation: bounceInLeft 1s 1 0.3s both;
+}
+/*#page3 ul li strong{
+    -webkit-animation: move1 1s 1 linear both;
+    animation: move1 1s 1  linear both;
+}*/
+#page3 ul li:nth-child(1) strong{
+    -webkit-animation: move1 1s 1 0.3s linear both;
+    animation: move1 1s 1 0.3s  linear both;
+}
+#page3 ul li:nth-child(2) strong{
+    -webkit-animation: move1 1s 1 0.6s linear both;
+    animation: move1 1s 1 0.6s  linear both;
+}
+#page3 ul li:nth-child(3) strong{
+    -webkit-animation: move1 1s 1 0.9s linear both;
+    animation: move1 1s 1 0.9s linear both;
+}
+#page3 ul li:nth-child(4) strong{
+    -webkit-animation: move1 1s 1 1.2s linear both;
+    animation: move1 1s 1 1.2s linear both;
+}
+@-webkit-keyframes move1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes move1{
+0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+}
+100%{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+
+#page3 ul li:nth-child(1) span{
+    width:2rem;
+    transition: width 1s linear 1s;
+}
+#page3 ul li:nth-child(2) span{
+    width:2rem;
+    transition: width 2s linear 1s;
+}
+#page3 ul li:nth-child(3) span{
+    width:2rem;
+    transition: width 3s linear 1s;
+}
+#page3 ul li:nth-child(4) span{
+    width:2rem;
+    transition: width 4s linear 1s;
+}
+
+
+
+#page3 ul li:nth-child(2){
+    -webkit-animation: bounceInLeft 1s 1 0.6s both;
+    animation: bounceInLeft 1s 1 0.6s both;
+}
+#page3 ul li:nth-child(3){
+    -webkit-animation: bounceInLeft 1s 1 0.9s both;
+    animation: bounceInLeft 1s 1 0.9s both;
+}
+#page3 ul li:nth-child(4){
+    -webkit-animation: bounceInLeft 1s 1 1.2s both;
+    animation: bounceInLeft 1s 1 1.2s both;
+}
+#page3 .ab_pen{
+    -webkit-animation: rollIn 1s 1 both;
+    animation: rollIn 1s 1 both;
+}
+#page3 .ab_bottom{
+    -webkit-animation: fadeInUp 1s 1 both;
+    animation: fadeInUp 1s 1 both;
+}
+
+
+#page4 ul li:nth-child(1) span{
+    -webkit-animation: bounceIn 1s 1 0.3s linear both;
+    animation: bounceIn 1s 1 0.3s linear both;
+}
+#page4 ul li:nth-child(2) span{
+    -webkit-animation: bounceIn 1s 1 0.7s linear both;
+    animation: bounceIn 1s 1 0.7s  linear both;
+}
+#page4 ul li:nth-child(3) span{
+    -webkit-animation: bounceIn 1s 1 1.1s linear both;
+    animation: bounceIn 1s 1 1.1s linear both;
+}
+#page4 ul li:nth-child(4) span{
+    -webkit-animation: bounceIn 1s 1 1.5s linear both;
+    animation: bounceIn 1s 1 1.5s  linear both;
+}
+#page4 ul li:nth-child(5) span{
+    -webkit-animation: bounceIn 1s 1 1.9s linear both;
+    animation: bounceIn 1s 1 1.9s  linear both;
+}
+
+#page4 ul li:nth-child(1) p{
+    -webkit-animation: zoomIn 1s 1 0.3s linear both;
+    animation: zoomIn 1s 1 0.3s linear both;
+}
+#page4 ul li:nth-child(2) p{
+    -webkit-animation: zoomIn 1s 1 0.7s linear both;
+    animation: zoomIn 1s 1 0.7s  linear both;
+}
+#page4 ul li:nth-child(3) p{
+    -webkit-animation: zoomIn 1s 1 1.1s linear both;
+    animation: zoomIn 1s 1 1.1s linear both;
+}
+#page4 ul li:nth-child(4) p{
+    -webkit-animation: zoomIn 1s 1 1.5s linear both;
+    animation: zoomIn 1s 1 1.5s  linear both;
+}
+#page4 ul li:nth-child(5) p{
+    -webkit-animation: zoomIn 1s 1 1.9s linear both;
+    animation: zoomIn 1s 1 1.9s  linear both;
+}
+
+#page4 dl.pro_exper ul li span em{
+    -webkit-animation: move4 1s infinite linear  both;
+    animation: move4 1s infinite linear  both;
+}
+@-webkit-keyframes move4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes move4 {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#page4 .ab_pen{
+    opacity: 1;
+    -webkit-animation: rollIn 1s 1 both;
+    animation: rollIn 1s 1 both;
+}
+#page4 .ab_bottom{
+    opacity: 1;
+    -webkit-animation: fadeInUp 1s 1 both;
+    animation: fadeInUp 1s 1 both;
+}
+
+
+#page5 .weixin{
+     -webkit-animation: bounceInDown 1s 1 0.3s both;
+     animation: bounceInDown 1s 1 0.3s both;
+ }
+#page5 .message p:nth-child(1){
+    -webkit-animation: fadeInDown 1s 1 0.6s both;
+    animation: fadeInDown 1s 1 0.6s both;
+}
+#page5 .message p:nth-child(2){
+    -webkit-animation: fadeInDown 1s 1 0.9s both;
+    animation: fadeInDown 1s 1 0.9s both;
+}
+#page5 .message p:nth-child(3){
+    -webkit-animation: fadeInDown 1s 1 0.9s both;
+    animation: fadeInDown 1s 1 0.9s both;
+}
+#page5 .message p:nth-child(4){
+    -webkit-animation: fadeInDown 1s 1 1.5s both;
+    animation: fadeInDown 1s 1 1.5s both;
+}
+#page5 .ab_book{
+    -webkit-animation: fadeInLeft 1s 1 1s both;
+    animation: fadeInLeft 1s 1 1s both;
+}
+#page5 .people{
+    -webkit-animation: zoomIn 2s infinite  linear  both;
+    animation: zoomIn 2s linear infinite both;
+}
+
+#page2.swiper-slide dl,#page3.swiper-slide dl,#page4.swiper-slide dl,#page5.swiper-slide dl{
+    -webkit-animation: fadeInDown 1s 1 both;
+    animation: fadeInDown 1s 1 both;
+}
+
+    /*音乐*/
+.music{
+    width:0.6rem;
+    height:0.6rem;
+    position: absolute;
+    right:0.2rem;
+    top: 0.2rem;
+    background:url("../audio/music.svg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 111;
+    opacity: 0;
+}
+.musicMove{
+    animation:move 1s infinite linear both ;
+}
+@keyframes move {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .swiper-slide dl{background:url("../img/bg3.png") no-repeat; width:534px; height:861px; background-size:cover; margin:48px auto 0; padding-top:60px; opacity: 0; }
+    hgroup{padding:26px 50px; width:354px; margin:104px auto 0;}
+    .slide1 h1{font-size: 48px; letter-spacing:10px; }
+    .slide1 span{font-size: 26px;  line-height: 26px;margin-top:10px; display: block}
+    .slide1 .box_circle{ width:588px; height:592px; line-height:592px;  margin:104px auto 0;}
+    .slide1 .box_circle p{width:500px; height:500px; position: absolute; top:40px; left:40px; z-index: 11}
+    .slide1 .box_circle p img{position: absolute; top:100px; left:-2px; width:545px; height:400px}
+    .small_circle{width:540px; height:540px; position: absolute; top:20px; left:20px; z-index: 0}
+    .big_circle{ width:590px; height:590px;  position: absolute; top:0; left:0; z-index: 0}
+
+    .slide2 dt{padding:10px; width:164px; height:164px; margin:0 auto; position: relative}
+    .slide2 dl{position: relative;}
+    .slide2 dt span{width:164px; height:164px; border-radius:50%; display:block; overflow: hidden;}
+    .slide2 dt span img{width:100%; height:100%;}
+    .slide2 dt .me_circle{position: absolute; top:0; left:0; width:100%; height:100%; background: url("../img/b_circle_dashed.png") no-repeat; background-size: 100%;}
+    .slide2 dd ul{width:440px; margin:0 auto;}
+    .slide2 dd ul li{padding:0 10px; font-size:26px; line-height:90px; border-bottom:1px solid #ccc;}
+    .slide2 dd ul li span{margin-right:20px;}
+    .ab_book{position: absolute; bottom:-60px; left:50%; margin-left:-281px;width:562px;}
+
+    .slide3,.slide4,.slide5{text-align: center;}
+    .slide3 h2,.slide4 h2,.slide5 h2{color: inherit;  line-height: inherit;  font-size: 48px; letter-spacing:10px }
+    .slide3 dl{margin-top:78px;}
+    .slide3 dl ul{padding:96px 76px 0; text-align: left;}
+    .slide3 dl ul li{margin-bottom:30px;}
+    .slide3 dl ul li strong{width:76px; height:76px; line-height:76px; border-radius:50%; border:1px solid #ccc; display: inline-block; margin-right:30px; text-align: center; font-size: 38px; font-weight: normal;}
+    .ab_pen{position: absolute; top:44px; right:-152px; margin-left:-281px; width:304px; height:304px; opacity: 0;}
+    .ab_bottom{position: absolute; top: 540px; left: -300px; width:824px; height:839px; opacity: 0;}
+
+    .slide4 dl.pro_exper ul{padding:50px 30px; font-size:24px;}
+    .slide4 dl.pro_exper ul li{overflow: hidden; margin-bottom: 20px;}
+    .slide4 dl.pro_exper ul li span{width:100px; height:100px; border:1px dashed #ccc; line-height:100px; border-radius: 50%; display: inline-block; float:left;
+        position: relative;}
+    .slide4 dl.pro_exper ul li span em{position: absolute; top:0; left:0; width:100%; height:100%; background: url("../img/b_circle_dashed.png") no-repeat; background-size: 100%;}
+    .slide4 dl.pro_exper ul li p{float:left; margin-top:15px;line-height:36px; margin-left:30px; width:330px;}
+
+
+    .slide5 dt{padding:0; border:0; width:100%; height:auto;}
+    .slide5 dd.weixin{width:230px; height:230px; margin:52px auto 0;}
+    .slide5 dd.message{margin-top:66px; line-height:44px; font-size:24px;}
+
+    .music{
+        width:60px;
+        height:60px;
+        position: absolute;
+        right:20px;
+        top: 20px;
+        background:url("../audio/music.svg") no-repeat;
+        background-size: 100% 100%;
+        z-index: 111;
+        opacity: 0;
+    }
+}
