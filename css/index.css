@@ -15,7 +15,7 @@ html,body,.main{
 
 
 .swiper-slide{position: relative;  background:url("../img/bg3.jpg") no-repeat; background-size: 100% 100%; overflow: hidden; width:100%;}
-.swiper-slide dl{width:5.34rem; height:8.61rem; background-size:cover; margin:0.48rem auto 0; padding-top:0.6rem; opacity: 0; }
+.swiper-slide dl{width:5.34rem; height:8.61rem; background-size:cover; margin:0.48rem auto 0; padding-top:0.6rem; opacity: 0; background: url("../img/bg3.png") no-repeat; }
 #page2.swiper-slide dl,#page3.swiper-slide dl,#page4.swiper-slide dl,#page5.swiper-slide dl{opacity: 1;}
 .swiper-slide img{width:100%; height:100%;}
 .slide1{
@@ -44,7 +44,7 @@ hgroup{padding:0.26rem 0.5rem; border-top:1px solid #ccc; border-bottom:1px soli
 .slide2 dd ul{width:4.40rem; margin:0 auto;}
 .slide2 dd ul li{padding:0 0.1rem; font-size:0.26rem; line-height:0.90rem; border-bottom:1px solid #ccc;}
 .slide2 dd ul li span{display:inline-block; margin-right:0.2rem;}
-.ab_book{position: absolute; bottom:-1rem; left:50%; margin-left:-2.81rem;width:5.62rem;}
+.ab_book{position: absolute; bottom:-3rem; left:50%; margin-left:-2.25rem;width:4.5rem; height:4.5rem;}
 .people{width:3.45rem; height:auto; margin:0.4rem auto;}
 
 
@@ -74,6 +74,14 @@ hgroup{padding:0.26rem 0.5rem; border-top:1px solid #ccc; border-bottom:1px soli
 .slide4 dl.pro_exper ul li:last-child{
     border:none;
 }
+.slide4 .ab_bottom {
+     position: absolute;
+     top:9rem;
+     left: 30%;
+     margin-left: -2.25rem;
+     width: 4.5rem;
+     height: 4.5rem;
+ }
 
 .slide5 dt{padding:0; border:0; width:100%; height:auto;}
 .slide5 dd.weixin{width:2.3rem; height:2.3rem; margin:0.52rem auto 0;}
@@ -224,15 +232,15 @@ hgroup{padding:0.26rem 0.5rem; border-top:1px solid #ccc; border-bottom:1px soli
 }
 #page3 ul li:nth-child(2) span{
     width:2rem;
-    transition: width 2s linear 1s;
+    transition: width 1.2s linear 1s;
 }
 #page3 ul li:nth-child(3) span{
     width:2rem;
-    transition: width 3s linear 1s;
+    transition: width 1.4s linear 1s;
 }
 #page3 ul li:nth-child(4) span{
     width:2rem;
-    transition: width 4s linear 1s;
+    transition: width 1.6s linear 1s;
 }
 
 
@@ -334,9 +342,8 @@ hgroup{padding:0.26rem 0.5rem; border-top:1px solid #ccc; border-bottom:1px soli
     animation: rollIn 1s 1 both;
 }
 #page4 .ab_bottom{
-    opacity: 1;
-    -webkit-animation: fadeInUp 1s 1 both;
-    animation: fadeInUp 1s 1 both;
+    -webkit-animation: rollIn  1 1s both;
+    animation: rollIn  1 1s both;
 }
 
 
